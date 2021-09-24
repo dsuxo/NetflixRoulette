@@ -28,8 +28,8 @@
     "webpack-merge": "^5.8.0"
   },
   "scripts": {
-    "start": "webpack serve --open --config webpack.dev --hot",
-    "build": "webpack --config webpack.prod"
+    "DEV": "cross-env NODE_ENV=development webpack serve --open --hot",
+    "PROD": "cross-env NODE_ENV=production webpack build"
   },
   "eslintConfig": {
     "extends": [
